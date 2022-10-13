@@ -1,0 +1,60 @@
+type Location {
+  country: String
+  name: String
+  region: String
+  lat: String
+  lon: String
+  localtime: String
+  tz_id: String
+}
+
+type Condition {
+  text: String
+  icon: String
+}
+
+type Current {
+  temp_f: String
+  temp_c: String
+  feelslike_f: String
+  feelslike_c: String
+  condition: Condition
+  humidity: Float
+  cloud: String
+  wind_mph: String
+  wind_dir: String
+}
+
+type Astro {
+  sunrise: String
+  sunset: String
+  moon_phase: String
+}
+
+type ForecastHour {
+  condition: Condition
+  temp_c: Float
+  temp_f: Float
+  time_epoch: Float
+  time: String
+}
+
+type ForecastDay {
+  astro: Astro
+  date: String
+  hour: [ForecastHour]
+}
+
+type Forecast {
+  forecastday: [ForecastDay]
+}
+
+type Weather {
+  location: Location
+  current: Current
+  forecast: Forecast
+}
+
+type Query {
+  weather(search: String): Weather
+}
