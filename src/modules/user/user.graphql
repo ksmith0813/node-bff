@@ -62,9 +62,9 @@ type User {
 }
 
 type Result {
-  results: User
+  results: [User]
 }
 
 type Query {
-  users: [Result]
+  users: Result
 }
