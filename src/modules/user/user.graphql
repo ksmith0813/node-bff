@@ -1,0 +1,70 @@
+type UserId {
+  value: String
+}
+
+type Name {
+  first: String
+  last: String
+}
+
+type Picture {
+  large: String
+  medium: String
+  thumbnail: String
+}
+
+type Street {
+  number: String
+  name: String
+}
+
+type Coordinates {
+  latitude: String
+  longitude: String
+}
+
+type Timezone {
+  offset: String
+  description: String
+}
+
+type Location {
+  street: Street
+  city: String
+  state: String
+  country: String
+  postcode: String
+  coordinates: Coordinates
+  timezone: Timezone
+}
+
+type DateOfBirth {
+  date: String,
+  age: Float
+}
+
+type Registered {
+  date: String,
+  age: Float
+}
+
+type User {
+  id: UserId
+  name: Name
+  email: String
+  picture: Picture
+  location: Location
+  dob: DateOfBirth
+  registered: Registered
+  phone: String
+  cell: String
+  nat: String 
+}
+
+type Result {
+  results: User
+}
+
+type Query {
+  users: [Result]
+}
