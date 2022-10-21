@@ -28,12 +28,16 @@ https://www.weatherapi.com/docs/
 
 Add the api keys to .env.local
 
+To build App:
 
-To Start Server on Mac or Linux:
+`npm run build`
+
+
+To start server on Mac or Linux:
 
 `npm run start`
 
-To Start on Windows OS:
+To start server on Windows OS:
 
 `npm run win-start`
 
