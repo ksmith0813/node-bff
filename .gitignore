@@ -39,5 +39,3 @@ yarn.lock
 
 # ENV
 *.env.local
-
-/src/keys.ts
