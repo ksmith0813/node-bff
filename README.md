@@ -40,5 +40,3 @@ To Start on Windows OS:
 To Visit GraphQL Playground:
 
 `http://localhost:3001/graphql`
-
-
