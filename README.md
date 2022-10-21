@@ -26,6 +26,8 @@ https://www.omdbapi.com/
 
 https://www.weatherapi.com/docs/
 
+Add the api keys to .env.local
+
 
 To Start Server on Mac or Linux:
 
